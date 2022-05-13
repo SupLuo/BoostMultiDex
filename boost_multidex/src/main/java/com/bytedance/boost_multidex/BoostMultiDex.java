@@ -20,7 +20,7 @@ public class BoostMultiDex {
 
         monitor = Monitor.get();
 
-        monitor.logInfo("BoostMultiDex is installing, version is " + BuildConfig.VERSION_NAME);
+        monitor.logInfo("BoostMultiDex is installing, version is " + BuildConfig.PROJECT_VERSION);
 
         if (isVMCapable(System.getProperty("java.vm.version"))) {
             monitor.logInfo("BoostMultiDex support library is disabled for VM capable");

@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 28
+
     defaultConfig {
         applicationId "com.bytedance.app.boost_multidex"
         minSdkVersion 16
@@ -24,6 +25,7 @@ android {
             path "CMakeLists.txt"
         }
     }
+    ndkVersion "16.1.4479499"
 }
 
 dependencies {
@@ -31,7 +33,8 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
 
-    implementation 'com.bytedance.boost_multidex:boost_multidex:1.0.1'
+//    implementation 'com.bytedance.boost_multidex:boost_multidex:1.0.1'
+    implementation project(path: ":boost_multidex")
 
     implementation "org.scala-lang:scala-library:2.11.7"
     implementation "com.facebook.fresco:fresco:1.0.1"
